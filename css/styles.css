@@ -24,6 +24,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 :root {
   --header-text-color: #212121;
   --alt-text-color: #757575;
@@ -45,9 +49,32 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 /* ----------------------------СТУДИЯ----------------------------- */
 /* ------------------------Шапка навигация------------------------ */
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-title {
@@ -132,11 +159,14 @@ body {
 }
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: #2f303a;
 }
 
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -161,9 +191,11 @@ body {
 /* -----------------------------Цели----------------------------- */
 
 .goals-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.goals-title {
+.visually-hidden {
 }
 
 .goals-list {
@@ -190,9 +222,12 @@ body {
 /* ---------------------------Деятельность------------------------- */
 
 .activity {
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .activity-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -209,10 +244,13 @@ body {
 /* -------------------------------Команда---------------------------- */
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
 .team-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -246,6 +284,8 @@ body {
 /* ---------------------------------Футер--------------------------- */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #2f303a;
 }
 
@@ -274,6 +314,7 @@ body {
 }
 
 .footer-item {
+  display: block;
 }
 
 .footer-place {
@@ -315,11 +356,11 @@ body {
 /* -------------------------------Портфолио---------------------------- */
 
 .portfolio {
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
-/* задать скрытый заголовок */
-
-.portfolio-title {
+.visually-hidden {
 }
 
 .portfolio-list {
@@ -354,6 +395,8 @@ body {
 /* --------------------------------Проекты------------------------------- */
 
 .projects {
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .projects-list {
