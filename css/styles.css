@@ -73,7 +73,7 @@ body {
 /* ----------------------------СТУДИЯ----------------------------- */
 /* ------------------------Шапка навигация------------------------ */
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -245,7 +245,6 @@ body {
 
 .goals-text {
   width: 270px;
-  height: 101px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -406,7 +405,7 @@ body {
 
 .portfolio {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
 }
 
 .visually-hidden {
@@ -415,9 +414,10 @@ body {
 .portfolio-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.portfolio-item {
+.portfolio-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -452,13 +452,7 @@ body {
 
 /* --------------------------------Проекты------------------------------- */
 
-.projects {
-  padding-top: 0;
-  padding-bottom: 94px;
-}
-
 .projects-list {
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -466,25 +460,26 @@ body {
 .projects-item:not(:nth-child(3n)) {
   margin-right: 30px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 
-.projects-item {
-  padding-bottom: 20px;
+.projects-item:nth-child(-n + 6) {
   margin-bottom: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 
 .projects-link {
 }
 
 .projects-images {
-  margin-bottom: 20px;
+}
+
+.projects-block {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .projects-title {
-  padding: 0 24px;
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
@@ -493,7 +488,6 @@ body {
 }
 
 .projects-text {
-  padding: 0 24px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
