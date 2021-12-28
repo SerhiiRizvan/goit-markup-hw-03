@@ -74,8 +74,6 @@ body {
 /* ------------------------Шапка навигация------------------------ */
 .header {
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-container {
@@ -114,6 +112,8 @@ body {
 }
 
 .header-link {
+  display: block;
+  padding: 32px 0px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -474,9 +474,7 @@ body {
 
 .projects-block {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  outline: 1px solid #eeeeee;
 }
 
 .projects-title {
