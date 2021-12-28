@@ -67,7 +67,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid tomato; */
 }
 
 /* ----------------------------СТУДИЯ----------------------------- */
@@ -195,6 +195,8 @@ body {
 }
 
 .hero-button {
+  padding: 10px 32px;
+  border: 0px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -207,6 +209,11 @@ body {
   border-radius: 4px;
   min-width: 200px;
   min-height: 50px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 
 /* -----------------------------Цели----------------------------- */
@@ -237,6 +244,8 @@ body {
 }
 
 .goals-text {
+  width: 270px;
+  height: 101px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -328,6 +337,8 @@ body {
 }
 
 .footer-title {
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -351,8 +362,8 @@ body {
 .footer-list {
 }
 
-.footer-item {
-  display: block;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-place {
@@ -411,6 +422,8 @@ body {
 }
 
 .portfolio-button {
+  border: 0px;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -420,8 +433,7 @@ body {
   cursor: pointer;
   color: #212121;
   background-color: #f5f4fa;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+
   border-radius: 4px;
 }
 
@@ -434,6 +446,8 @@ body {
 .portfolio-button:focus {
   color: #ffffff;
   background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* --------------------------------Проекты------------------------------- */
@@ -444,9 +458,9 @@ body {
 }
 
 .projects-list {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .projects-item:not(:nth-child(3n)) {
@@ -455,10 +469,23 @@ body {
   border: 1px solid #eeeeee;
 }
 
+.projects-item {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
 .projects-link {
 }
 
+.projects-images {
+  margin-bottom: 20px;
+}
+
 .projects-title {
+  padding: 0 24px;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -466,6 +493,7 @@ body {
 }
 
 .projects-text {
+  padding: 0 24px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
